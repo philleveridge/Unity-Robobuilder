@@ -2644,6 +2644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: servo 5
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cfff943d50c3bb842ba6c1e25d918f92, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: cfff943d50c3bb842ba6c1e25d918f92, type: 3}
       propertyPath: m_LocalPosition.x
       value: -137.2
@@ -3462,6 +3466,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 95a6270c86083cb4fa8aa2aad527795a, type: 3}
       propertyPath: m_Name
       value: head
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95a6270c86083cb4fa8aa2aad527795a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 95a6270c86083cb4fa8aa2aad527795a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4521,6 +4529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: servo 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cfff943d50c3bb842ba6c1e25d918f92, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: cfff943d50c3bb842ba6c1e25d918f92, type: 3}
       propertyPath: m_LocalPosition.x
       value: -137.2
@@ -4990,6 +5002,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84a6149fd84093c4fac5f0859be1bc8e, type: 3}
       propertyPath: m_Name
       value: chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84a6149fd84093c4fac5f0859be1bc8e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
