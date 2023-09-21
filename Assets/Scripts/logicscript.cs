@@ -3,11 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class logicscript : MonoBehaviour
 {
     private float timer = 0;
+    public WCK wck;
 
     /*                              0    1    2    3   4    5    6   7   8    9    10  11  12  13   14   15  */
     private int[] HunoBasicPose = { 125, 179, 199, 88, 108, 126, 72, 49, 163, 141, 51, 47, 49, 199, 205, 205 };
@@ -25,12 +24,17 @@ public class logicscript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        wck = GetComponent<WCK>();
+
         for (int i=0; i<joints.Length; i++)
         {
             GameObject servo = joints[i].robotPart;
             ServoScript x = servo.GetComponent<ServoScript>();
             Debug.Log("Connecting ... " + x.ServoID);
             x.setpos(HunoBasicPose[x.ServoID]);
+
+            byte[] r = wck.getservo(x.ServoID);
+            Debug.Log("Servo " + x.ServoID + " = " + r[0] +":" + r[1]);
         }
     }
 

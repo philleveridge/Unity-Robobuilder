@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEngine.GridBrushBase;
@@ -22,6 +23,12 @@ public class ServoScript : MonoBehaviour
     void Start()
     {
         Debug.Log("Servo "+ServoID+ " start");
+
+        ArticulationDriveType dt = ArticulationDriveType.Target;
+
+        var drive = servo.xDrive;
+        drive.driveType = dt;
+        servo.xDrive = drive;
     }
 
     // Update is called once per frame
